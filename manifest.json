@@ -1,0 +1,18 @@
+{
+  "name": "Video Speeder",
+  "version": "1.0.0",
+  "description": "Video speeder. Press e to speed up, q to slow down",
+  "manifest_version": 3,
+  "author": "Alberto Enriquez",
+  "action": {
+    "default_title": "Video speeder",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ],
+  "offline_enabled": true
+}
